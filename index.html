@@ -22,6 +22,8 @@
     <title>Sitio Web de Baratour</title>
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css></link>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap5prefixed.css">
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/main.js"></script>
 
@@ -47,6 +49,7 @@
         </div>
     </header>
 
+    <!-- seccion principal -->
     <section class="principal" id="inicio">
         <div class="video">
             <video src="./video/main.mp4" autoplay loop muted ></video>
@@ -59,6 +62,74 @@
             </p>
         </div>
     </section>
-    
+    <!-- fin seccion principal -->
+
+     <!-- seccion contacto -->
+    <section class="contact" id="contacto">
+        <div class="bootstrapcontainer">
+            <div id="formcontainer">
+                    <h2>Contactenos</h2>
+                    <p>
+                       Por favor escriba su mensaje y nos comunicaremos a la brevedad.
+                    </p>
+                
+                    <form id="form_contacto" method="post" action="https://formbold.com/s/9XjYo" class="needs-validation" novalidate>
+            
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name">
+                                    Nombre:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                   El campo Nombre es obligatorio.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="email">
+                                    Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Por favor ingrese un email v&aacute;lido.
+                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="name">
+                                    Asunto:</label>
+                                <input type="text" class="form-control" id="subject" name="subject">
+                            </div>   
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message">
+                                    Mensaje:</label>
+                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7" required></textarea>
+                                <div class="invalid-feedback">
+                                    Es necesario ingresar algun mensaje.
+                                 </div>
+                            </div>
+                        </div>
+                        
+            
+            
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+                        </div>
+            
+                    </form>
+                    
+                </div>
+        </div>
+    </section>
+    <!-- fin seccion contacto -->
+
 </body>
 </html>
