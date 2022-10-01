@@ -7,9 +7,27 @@ $(document).ready(function(){
     $(window).on('load scroll',function(){
         $('.fa-bars').removeClass('fa-times');
         $('.navbar').removeClass('nav-show');
-        });
 
-    
+
+        if($(window).scrollTop() > 30){
+            $('header').addClass('header-active');
+          }else{
+            $('header').removeClass('header-active');
+          }
+      
+          $('section').each(function(){
+            var id = $(this).attr('id');
+            var height = $(this).height();
+            var offset = $(this).offset().top -200;
+            var top = $(window).scrollTop();
+            if(top >= offset && top < offset + height){
+              $('.navbar ul li a').removeClass('active');
+              $('.navbar').find('[name="' + id + '"]').addClass('active');
+            }
+          });
+      
+        });
+      
 
 
 // JavaScript para validar formulario
