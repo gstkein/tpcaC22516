@@ -10,4 +10,26 @@ $(document).ready(function(){
         });
 
     
+
+
+// JavaScript para validar formulario
+(function () {
+    'use strict' 
+    // Aplicar Bootstrap validation styles a todos los forms
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+
 });

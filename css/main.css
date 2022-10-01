@@ -103,7 +103,7 @@ header .fa-bars {
     text-shadow:#4b4c67  0.1rem 0.1rem ;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-around;
     position: relative;
   }
@@ -119,6 +119,43 @@ header .fa-bars {
     margin:2em auto;
     width: 96%;
   }
+
+#formcontainer {	
+    background-color:  #acc0ecCC;
+    border-color: #6a6dcb99;
+    border-style:solid; 
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    padding: .3rem 2rem;
+    margin:2em auto;
+    width: 96%;
+    font-size: 1.5rem;
+    padding:15px 15px;
+	margin-top:10px;
+	background: rgba(255,255,255,0.75); 
+}
+
+#formcontainer h2 {
+    font-size: 3rem;
+}
+#formcontainer p {
+    font-size: 1.6rem;
+}
+
+#formcontainer input,  #formcontainer textarea {	
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#formcontainer label, #formcontainer button {
+    margin-top: 0.5rem;
+}
+
+.bootstrapcontainer #formcontainer .invalid-feedback {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
 
  /* breakpoints */
  @media (max-width:768px) {
@@ -154,8 +191,7 @@ header .navbar ul li .active {
     top: -0.6rem;
 }
 
-}
-    @media (max-width:478px) {
+@media (max-width:478px) {
 
         header .fa-bars {
             display: block;
@@ -195,7 +231,5 @@ header .navbar ul li .active {
         header .navbar ul {
             flex-direction: column;
             text-align: center;
-        }
-        
-
+        }      
  }
