@@ -208,6 +208,12 @@ header .navbar ul li .active {
     top: -0.6rem;
 }
 
+.banner_fadebackground {
+    height: 15rem;
+}
+
+}
+
 @media (max-width:478px) {
 
         header .fa-bars {
@@ -248,5 +254,9 @@ header .navbar ul li .active {
         header .navbar ul {
             flex-direction: column;
             text-align: center;
-        }      
+        }
+        
+        .banner_fadebackground {
+            height: 10rem;
+        }
  }
