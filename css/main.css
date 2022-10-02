@@ -153,6 +153,22 @@ header .fa-bars {
 	background: rgba(255,255,255,0.75); 
 }
 
+#nosotros .content {
+    background-color:  #acc0ecCC;
+    border-color: #6a6dcb99;
+    border-style:solid; 
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    padding: .3rem 2rem;
+    margin:2em auto;
+    width: 96%;
+
+    color: #f0f5fa;
+    font-size: 3em;
+    text-shadow: #4b4c67 0.1rem 0.1rem;
+  }
+
 #formcontainer h2 {
     font-size: 3rem;
 }
