@@ -153,6 +153,14 @@ header .fa-bars {
 	background: rgba(255,255,255,0.75); 
 }
 
+/*
+#nosotros {
+    background-image: url("../img/nosotros.jpg");
+    background: url("../img/nosotros.jpg");
+    background-size:100% 100%;
+  }
+*/  
+
 #nosotros .content {
     background-color:  #acc0ecCC;
     border-color: #6a6dcb99;
@@ -169,6 +177,27 @@ header .fa-bars {
     text-shadow: #4b4c67 0.1rem 0.1rem;
   }
 
+
+  #nosotros .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#nosotros .imagen {
+    border-style: solid;
+    border-color: black;
+    border-radius: 0.5em;
+    overflow: hidden;
+    width: 200vw;
+    height: 40vh;
+
+}
+#nosotros .rowitem {
+   margin: -1rem 2rem 2rem 0;  
+}
+
 #formcontainer h2 {
     font-size: 3rem;
 }
@@ -178,7 +207,6 @@ header .fa-bars {
 
 #formcontainer input,  #formcontainer textarea {	
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 #formcontainer label, #formcontainer button {
@@ -227,6 +255,21 @@ header .navbar ul li .active {
 .banner_fadebackground {
     height: 15rem;
 }
+
+#nosotros .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+#nosotros .rowitem {
+    margin: 0 2rem 2rem 0;  
+ }
+ 
 
 }
 
