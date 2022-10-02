@@ -192,6 +192,8 @@ header .fa-bars {
     overflow: hidden;
     width: 200vw;
     height: 40vh;
+    max-width: 450px;
+    max-height: 400px;
 
 }
 #nosotros .rowitem {
