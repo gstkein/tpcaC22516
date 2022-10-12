@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./icon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./icon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./icon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./icon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./icon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./icon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./icon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./icon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./icon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./icon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./icon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./icon/favicon-128.png" sizes="128x128" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/place.js"></script>
+    
+
+    <script>
+       window.onload = function() {
+            setearPrecioSegunDolar("price1", 90);
+            setearPrecioSegunDolar("price2", 120);
+        };
+    </script>
+
+</head>
+<body>
+
+<!-- lugar section starts  -->
+
+<section class="lugar" id="lugar">
+
+    <h1 class="titulo">
+        <span>BRASIL</span>
+    </h1>
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <img src="img/BRASIL.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rio de Janeiro </h3>
+                <p>Disftute una de las mejores playas del mundo, sus aguas cálidas y el sabor del carnaval.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> <span class="dolarsign">$</span><span id="price1"> </span> <span class="price2"><span class="dolarsign">$</span><span id="price2"> </span></span> </div>
+                <a href="mailto:cuenta385@hotmail.com" class="boton">Consultar</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
