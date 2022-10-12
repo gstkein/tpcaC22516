@@ -28,19 +28,51 @@ $(document).ready(function(){
       
         });
       
+function validarFormJS(field) {
+  field.addEventListener('change', (event) => {validateField(event.target)});
 
+  if (field.getAttribute('listener') !== 'true') {
+    field.addEventListener('input', function (e) {
+      field.setAttribute('listener', 'true');
+        validateField(field);
+   });
+  }
+
+  return validateField(field);
+}
+
+function validateField(x) {
+  if (x.value == "") {
+    x.classList.add('is-invalid');
+    x.classList.remove('is-valid');
+    x.classList.remove('valid');
+    x.setCustomValidity("Invalid field.");
+    return false;
+  } else {
+    x.classList.remove('is-invalid');
+    x.classList.add('is-valid');
+    x.setCustomValidity("");
+  }
+}
 
 // JavaScript para validar formulario
+// Campos Asuntos y Mensaje validados como no vacios por JS
+// nombre requerido y campo email validados con html5 al igual que tamaño minimo de mensaje
 (function () {
     'use strict' 
     // Aplicar Bootstrap validation styles a todos los forms
     var forms = document.querySelectorAll('.needs-validation')
   
-    // Loop over them and prevent submission
+    // Loop over forms and prevent submission
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
+
+          let htmlVal = form.checkValidity();
+          let jsVal = validarFormJS(document.forms["form_contacto"]["subject"]);
+          let jsVal2 = validarFormJS(document.forms["form_contacto"]["message"]);
+
+          if (!htmlVal || !jsVal  || !jsVal2) {
             event.preventDefault()
             event.stopPropagation()
           }

@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 
 
 * {
@@ -201,7 +203,7 @@ header .fa-bars {
     font-weight: 300;
 }
 
-.cardcontainer .card a {
+.cardcontainer .card a, .boton {
     font-weight: 500;
     text-decoration: none;
     font-size: 1rem;
@@ -240,7 +242,7 @@ header .fa-bars {
     background: linear-gradient(rgba(89, 180, 255, 0.8) rgba(255, 118, 225, 0.8));
 }
   
-img {
+.galeria img {
     width:600px;
     height:300px;
     object-fit: cover;
@@ -248,7 +250,7 @@ img {
     padding: 6px;
 }
 
-img:hover {
+.galeria img:hover {
     cursor: pointer;
     opacity: 0.7;
     transform: scale(1.05);
@@ -340,6 +342,100 @@ img:hover {
     font-size: 1rem;
 }
 
+/* LUGARES */
+
+.lugar {
+    color: #40a583;
+}
+
+
+.lugar .titulo{
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .lugar .titulo span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #40a583;
+    font-size: 3rem;
+    letter-spacing: 0.03cm;
+    line-height: 1.6;
+    font-family: 'Libre Bodoni', serif;
+  }
+  
+  .lugar .titulo span.space{
+    background:none;
+  }
+  
+  .boton:hover{
+    background:rgba(255, 165, 0,.2);
+    color:var(--orange);
+  }
+  
+  .lugar .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+  
+  .lugar .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+  
+  .lugar .box-container .box img{
+    height: 25rem;
+    width:100%;
+    object-fit: fill;
+  }
+  
+  .lugar .box-container .box .content{
+    padding:2rem;
+  }
+  
+  .lugar .box-container .box .content h3{
+    font-size:2rem;
+  }
+  
+  .lugar .box-container .box .content h3 i{
+    color:#2f4287;
+  }
+  
+  .lugar .box-container .box .content p{
+    font-size:1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  
+  .lugar .box-container .box .content .stars i{
+    font-size:1.7rem;
+    color:#edca40;
+  }
+  
+  .lugar .box-container .box .content .price{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+  }
+  
+
+  .lugar .box-container .box .content .price .price2 {
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+
+  .lugar .box-container .box .content .price .dolarsign {
+    font-family: 'Nunito', sans-serif;
+  }
+
+
+
+/* FIN LUGARES */
+
  /* breakpoints */
  @media (max-width:768px) {
     html {
@@ -351,7 +447,7 @@ img:hover {
    
     header .navbar{
         position:fixed;
-        background: #0ba89b;
+        background: #03b8be93;
         height: 3rem;
         top:10.5rem;
         left:50%;
