@@ -55,7 +55,7 @@ body {
       rgba(47, 9, 128, 0.11)
     );
     border-radius: .5rem;
-    width: 99.98%;
+    width: 100%;
     left:0.1em;       
   }
   
@@ -123,24 +123,38 @@ header .fa-bars {
   }
   
   .principal {
-    color:#e6ebf0f1;
-    font-size: 3.5rem;
+    color:#dbf1cdf1;
+    font-size: 40px;
     text-shadow:#0f115c  0.2rem 0.2rem ;
     min-height: 90vh;
     display: flex;
     align-items:center;
     justify-content: space-around;
-    position:relative;
-    margin-bottom: 20px;
+    position: relative;
+    
   }
 
+  .principal h4{
+    text-align-last: center;
+    color:#88eb7b;
+    animation: cambiar 9s infinite;
+  }
+
+    @keyframes cambiar {
+    0%{margin-top: 0;}
+    30%{margin-top: 0;}
+    25%{margin-top: 20px;}
+    50%{margin-top: 20px;}
+        
+    }
+
   .principal .content {
-    background-color:  #597377a8;
-    align-items: center;
+    background-color:  #7a8688a8;
+    text-align: center;
     justify-content: space-between;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
   /* seccion destinos con Tarjetas con efecto hover*/
