@@ -145,7 +145,6 @@ header .fa-bars {
     30%{margin-top: 0;}
     25%{margin-top: 20px;}
     50%{margin-top: 20px;}
-        
     }
 
   .principal .content {
@@ -349,6 +348,10 @@ header .fa-bars {
 
 #formcontainer label, #formcontainer button {
     margin-top: 2rem;
+}
+
+#formcontainer button {
+   font-size: 1.5rem;
 }
 
 .bootstrapcontainer #formcontainer .invalid-feedback {
@@ -580,7 +583,7 @@ header .fa-bars {
     header .navbar ul li {
         margin-left: -0.1px;
     }
-      
+
     header .navbar ul li a, header .navbar ul li a:hover{
         font-size: 2.1rem;
         position: relative;
@@ -615,6 +618,7 @@ header .fa-bars {
 
         .principal .content {
             margin-top: 3rem;
+            font-size: 3rem;
         }
 
         header .navbar{
@@ -694,4 +698,11 @@ header .fa-bars {
             margin-left: 3vw;
             width: 100vw;
         }
+
+        @keyframes cambiar {
+            0%{margin-top: 0;}
+            30%{margin-top: 0;}
+            25%{margin-top: 15px;}
+            50%{margin-top: 15px;}
+            }
 }
