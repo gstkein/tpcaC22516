@@ -449,46 +449,6 @@ header .fa-bars {
   }
 /* FIN LUGARES */
 
- /* breakpoints */
- @media (max-width:768px) {
-    html {
-        font-size: 70%;
-    }
-    header  .mainbanner{
-      justify-content: center;
-    }
-   
-    header .navbar{
-        position:fixed;
-        background: #2f4287;
-        height: 4rem;
-        top:8rem;
-        width: 100%;       
-        padding: .1rem 2rem;
-    }
-
-    header .navbar ul {
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    header .navbar ul li {
-        margin-left: -0.1px;
-    }
-      
-    header .navbar ul li a, header .navbar ul li a:hover{
-        font-size: 2.1rem;
-        position: relative;
-        top: -0.6rem;
-    }
-
-    header .navbar ul li .active {
-        font-size: 2.2rem;
-        position: relative;
-        top: -0.6rem;
-    }
-
-}
 
 .banner_fadebackground {
     height: 15rem;
@@ -515,76 +475,7 @@ header .fa-bars {
 .destinos .cardcontainer .card a {
     font-size: 1.5rem;
 }
- 
 
-@media (max-width:478px) {
-
-        header .fa-bars {
-            display: block;
-            font-size: 3em;
-        }
-
-        header .navbar{
-            display: none;
-        }
-
-        header .navbar.nav-show {
-            display: block;
-            margin-left: -1rem;
-            position: fixed;
-            top: 8rem;
-        }
-     
-
-        header .mainbanner {
-            justify-content: space-between;
-        }
-
-        header .logo1 {
-            font-size: 4rem;
-        }
-        
-        header .logo2 {
-            font-size: 3rem; 
-        }
-
-        html {
-            font-size: 55%;
-        }
-
-        header .navbar{
-            height: 20rem;
-        }
-
-        header .navbar ul {
-            flex-direction: column;
-            text-align: center;
-            margin-top: 1rem;
-            position: fixed;
-            top: 15rem;
-        }
-
-        header .navbar ul li{
-            margin-top: 0.6rem;
-        }
-        
-        .banner_fadebackground {
-            height: 10rem;
-        }
-
-            
-        header .navbar ul li a, header .navbar ul li a:hover{
-            font-size: 2.5rem;
-            position: relative;
-
-        }
-
-        header .navbar ul li .active {
-            font-size: 2.5rem;
-            position: relative;
-            top: -0.6rem;
-        }
-}
 
 /* Footer */
 .pie-pagina{
@@ -655,20 +546,152 @@ header .fa-bars {
     font-size: 15px;
 }
 
-/*responsive*/
-@media screen and (max-width: 800px){
-    pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-
-} 
 /* fin - Footer */
 
 .nopage div{
     display: flex;
     justify-content: center;
     height: 900px;       
+}
+
+ /* breakpoints */
+ @media (max-width:768px) {
+    html {
+        font-size: 70%;
+    }
+    header  .mainbanner{
+      justify-content: center;
+    }
+   
+    header .navbar{
+        position:fixed;
+        background: #2f4287;
+        height: 4rem;
+        top:8rem;
+        width: 100%;       
+        padding: .1rem 2rem;
+    }
+
+    header .navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header .navbar ul li {
+        margin-left: -0.1px;
+    }
+      
+    header .navbar ul li a, header .navbar ul li a:hover{
+        font-size: 2.1rem;
+        position: relative;
+        top: -0.6rem;
+    }
+
+    header .navbar ul li .active {
+        font-size: 2.2rem;
+        position: relative;
+        top: -0.6rem;
+    }
+
+    .pie-pagina .grupo-1{
+        width: 90vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+}
+
+@media (max-width:478px) {
+
+        header {
+            max-width: 100vw;
+        }
+
+        header .fa-bars {
+            display: block;
+            font-size: 3em;
+        }
+
+        .principal .content {
+            margin-top: 3rem;
+        }
+
+        header .navbar{
+            display: none;
+        }
+
+        header .navbar.nav-show {
+            display: block;
+            margin-left: -1rem;
+            position: fixed;
+            top: 8rem;
+        }
+     
+
+        header .mainbanner {
+            justify-content: space-between;
+        }
+
+        header .logo1 {
+            font-size: 4rem;
+        }
+        
+        header .logo2 {
+            font-size: 3rem; 
+        }
+
+        html {
+            font-size: 55%;
+        }
+
+        header .navbar{
+            height: 20rem;
+        }
+
+        header .navbar ul {
+            flex-direction: column;
+            text-align: center;
+            margin-top: 1rem;
+            position: fixed;
+            top: 15rem;
+        }
+
+        header .navbar ul li{
+            margin-top: 0.6rem;
+        }
+        
+        .banner_fadebackground {
+            height: 10rem;
+        }
+
+            
+        header .navbar ul li a, header .navbar ul li a:hover{
+            font-size: 2.5rem;
+            position: relative;
+
+        }
+
+        header .navbar ul li .active {
+            font-size: 2.5rem;
+            position: relative;
+            top: -0.6rem;
+        }
+
+        #formcontainer button {
+            font-size: 1.5rem;
+        }
+
+        .pie-pagina .grupo-1{
+            width: 100vw;
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0%;
+        }
+
+        .pie-pagina .grupo-1 .box {
+            margin-left: 3vw;
+            width: 100vw;
+        }
 }
