@@ -342,8 +342,8 @@ header .fa-bars {
 }
 
 #formcontainer input,  #formcontainer textarea {	
-    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-    font-family: 'Beau Rivage', bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
 }
 
 #formcontainer label, #formcontainer button {
@@ -352,6 +352,11 @@ header .fa-bars {
 
 #formcontainer button {
    font-size: 1.5rem;
+}
+
+.bootstrapcontainer #formcontainer .invalid-feedback {
+    font-family: 'Libre Bodoni', serif;
+    font-size:1.5rem;
 }
 
 /* LUGARES */
